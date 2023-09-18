@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ccc;
+}
+.container{
+    width:900px;
+    margin: 0 auto;
+}
+.container .apply_job{ 
+    max-width: 600px;
+    margin:0 auto;
+    border-radius: 8px;
+    background: #fff;
+    margin-top: 50px;
+}
+.container .apply_job h1{
+     margin: 30px 0px 0px 25px;
+}
+.container .apply_job span{
+    font-size: 20px;
+}
+.form_container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-inline: 20px;
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+input, select, textarea{
+    border:1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+input:focus{
+    outline-color: red;
+}
+label{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.textarea_control{
+    grid-column: 1 / span 2;
+}
+.textarea_control textarea{
+    width: 100%;
+    resize: none;
+}
+.button_container{
+    display: flex;
+    margin-block: 25px;
+    justify-content: end;
+}
+.button_container button{
+    border: transparent;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 8px;
+    background: red;
+    color:#fff;
+    margin: 25px;
+    transition: all 1s;
+}
+.button_container button:hover{
+    background: blue;
+    cursor: pointer;
+    
+}
